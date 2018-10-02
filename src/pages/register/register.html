@@ -1,0 +1,71 @@
+<ion-content>
+
+  <div padding [@flyInBottomFast]="'in'" id="cloud-layer">
+
+    <ion-row>
+      <ion-col>
+        <img [@flyInBottomSlow]="'in'" src="../../assets/img/logo.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="'in'">
+          <!-- Login form -->
+          <form class="list-form" [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
+            <ion-item>
+              <ion-label>{{'pages.login.name' | translate}}</ion-label>
+                <ion-icon name="person" item-start class="text-primary"></ion-icon>
+              <ion-input formControlName="name" type="text"></ion-input>
+            </ion-item>
+            <div *ngIf="registerForm.controls.name.invalid && registerForm.controls.name.dirty" text-center margin-top>
+              <ion-label *ngIf="registerForm.controls.name.hasError('required')" align-items-center color="danger">This field is required</ion-label>
+              <ion-label *ngIf="registerForm.controls.name.hasError('minlength')" align-items-center color="danger">Password must be minimum 4 characters</ion-label>
+              <ion-label *ngIf="registerForm.controls.name.hasError('maxlength')" align-items-center color="danger">Password must be maximum 40 characters</ion-label>        </div>
+            <ion-item>
+              <ion-label>{{'pages.login.username' | translate}}</ion-label>
+              <ion-icon name="person" item-start class="text-primary"></ion-icon>
+              <ion-input formControlName="username" type="text"></ion-input>
+            </ion-item>
+            <div *ngIf="registerForm.controls.username.invalid && registerForm.controls.username.dirty" text-center margin-top>
+              <ion-label *ngIf="registerForm.controls.username.hasError('required')" align-items-center color="danger">This field is required</ion-label>
+              <ion-label *ngIf="registerForm.controls.username.hasError('minlength')" align-items-center color="danger">Password must be minimum 6 characters</ion-label>
+              <ion-label *ngIf="registerForm.controls.username.hasError('maxlength')" align-items-center color="danger">Password must be maximum 15 characters</ion-label>      </div>
+            <ion-item>
+              <ion-label>{{'pages.login.email' | translate}}</ion-label>
+              <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+              <ion-input formControlName="email" type="email" autocomplete="false" class="form-control"></ion-input>
+            </ion-item>
+            <div *ngIf="registerForm.controls.email.invalid && registerForm.controls.email.dirty " text-center margin-top>
+              <ion-label align-items-center color="danger">Please enter a valid email</ion-label>
+            </div>
+            <ion-item>
+              <ion-label>{{'pages.login.password' | translate}}</ion-label>
+              <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+              {{ 'password' | translate }}
+              <ion-input formControlName="password" type="password" autocomplete="false"></ion-input>
+            </ion-item>
+            <div *ngIf="registerForm.controls.password.invalid && registerForm.controls.password.dirty " text-center margin-top>
+              <ion-label *ngIf="registerForm.controls.password.hasError('required')" align-items-center color="danger">This field is required</ion-label>
+              <ion-label *ngIf="registerForm.controls.password.hasError('minlength')" align-items-center color="danger">Password must be minimum 8 characters</ion-label>
+              <ion-label *ngIf="registerForm.controls.password.hasError('maxlength')" align-items-center color="danger">Password must be maximum 20 characters</ion-label>
+            </div>
+          <div *ngIf="error" text-center margin-top>
+            <ion-label align-items-center color="danger">{{'messages.something_wrong' | translate}}</ion-label>
+          </div>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" [disabled]="!registerForm.valid" type="submit" [@fadeIn]="'in'">{{'pages.login.register' | translate}}</button>
+      </ion-col>
+    </ion-row>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <!-- Other links -->
+    <div text-center margin-top>
+      <span ion-text class="tappable" tappable (click)="login()"> <strong>{{'pages.login.have_account' | translate}}</strong></span>
+    </div>
+  </div>
+
+</ion-content>

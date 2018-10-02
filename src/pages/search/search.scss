@@ -1,0 +1,26 @@
+ion-app._gmaps_cdv_ .nav-decor {
+  background-color: transparent !important;
+}
+page-search {
+
+  .searchbar-md {
+    padding: 0;
+  }
+
+  #map {
+    height: 100%;
+  }
+
+  .my-location {
+    right: 11px;
+    top: 73%;
+    font-size: 32px;
+    position: absolute;
+    z-index: 10;
+    color: #666;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+}

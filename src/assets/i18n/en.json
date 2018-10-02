@@ -1,0 +1,62 @@
+{
+  "messages": {
+    "email_password_error":"Invalid email or password",
+    "something_wrong": "Something went wrong",
+    "invalid_email": "Please enter a valid email",
+    "field_required": "This field is required"
+  },
+  "pages": {
+    "login": {
+      "username": "Username",
+      "email": "E-mail",
+      "forgot_password": "Forgot password",
+      "new_here": "New here",
+      "register": "Sign up",
+      "login": "Sign in",
+      "logout": "Logout",
+      "name": "Name",
+      "password": "password",
+      "have_account": "I have an account",
+      "forgot_password_text": "Please enter your email to receive the reset password link",
+      "email_sent_success": "Password sent"
+    },
+    "item": {
+      "header-title": "New Parking",
+      "address": "Address",
+      "city": "City",
+      "province": "Province",
+      "zip": "Postal code",
+      "number":"Parking number #",
+      "size": "Dimensions",
+      "price": "Price",
+      "comment": "Comment",
+      "chooseImage": "Choose an Image",
+      "start-time": "From",
+      "end-time": "To",
+      "date": "Date",
+      "recurrence": "Recurrence",
+      "none": "On time",
+      "every_day": "Every Day",
+      "every_week":"Every week"
+    },
+    "parking-list": {
+      "header-title": "My parkings"
+    },
+    "booking-list": {
+      "header-title": "My bookings"
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "french": "French",
+    "english": "English",
+    "spanish": "Spanish",
+    "arabic": "Arabic"
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "send": "Send",
+    "ok": "Ok",
+    "save": "Save"
+  }
+}

@@ -1,0 +1,15 @@
+export { Api } from './api/api';
+export { Items } from '../mocks/providers/items';
+export { Settings } from './settings/settings';
+export { User } from './user/user';
+export { ActivityService } from './activity-service';
+export { AuthenticationService } from './authentication.service';
+export { ConnectionStatusService } from './connection-status-service';
+export { DeviceInfoService } from './device-info.service';
+export { EndpointService } from './endpoint.service';
+export { IonicDeploy } from './ionic-deploy.service';
+export { IonicDeployStatus } from './ionic-deploy-status';
+export { LogService } from './log.service';
+export { TripService } from './trip-service';
+export { VersionsListenerService } from './versions-listener.service';
+export { WeatherProvider } from './weather';

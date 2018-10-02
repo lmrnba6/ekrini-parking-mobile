@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button icon-only menuToggle="left" menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-searchbar autocomplete="on"
+      [(ngModel)]="address"
+      [showCancelButton]="true"
+      (search)="getAddress()"
+      placeholder="{{ autocomplete | translate }}">
+    </ion-searchbar>
+    <button ion-button icon-only menuToggle="right" end>
+      <ion-icon name="cog"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div #map id="map"></div>
+  <ion-icon name="locate" (click)="centerMap()" class="my-location"></ion-icon>
+</ion-content>

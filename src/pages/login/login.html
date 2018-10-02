@@ -1,0 +1,59 @@
+<ion-content>
+  <div padding [@flyInBottomFast]="'in'" id="cloud-layer">
+    <div style="width: 100%; text-align:right;">
+    <button id="lang" ion-button icon-only (click)="changeLanguage()" items-right> {{lang}}
+    </button>
+    </div>
+    <ion-row>
+      <ion-col>
+        <img [@flyInBottomSlow]="'in'" src="../../assets/img/logo.png" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-list inset [@bounceInBottom]="'in'">
+
+          <!--<div *ngIf="connectionErrorMessage" text-center margin-top>-->
+          <!--<ion-label align-items-center color="danger">No Internet connection</ion-label>-->
+          <!--</div>-->
+
+          <!-- Login form -->
+          <form class="list-form" [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+          <ion-item>
+            <ion-label>{{'pages.login.email' | translate}}</ion-label>
+            <ion-icon name="person" item-start class="text-primary"></ion-icon>
+            <ion-input formControlName="email" type="email" autocomplete="false" class="form-control"></ion-input>
+          </ion-item>
+          <div *ngIf="loginForm.controls.email.invalid && loginForm.controls.email.dirty " text-center margin-top>
+          <ion-label align-items-center color="danger">{{'messages.invalid_email' | translate}}</ion-label>
+          </div>
+          <ion-item>
+            <ion-label>{{'pages.login.password' | translate}}</ion-label>
+          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+          {{ 'password' | translate }}
+          <ion-input formControlName="password" type="password" autocomplete="false"></ion-input>
+          </ion-item>
+          <div *ngIf="loginForm.controls.password.invalid  && loginForm.controls.password.dirty" text-center margin-top>
+          <ion-label align-items-center color="danger">{{'messages.field_required' | translate}}</ion-label>
+          </div>
+          <p class="tappable" text-right ion-text  tappable (click)="forgotPass()"><strong>{{'pages.login.forgot_password' | translate}}?</strong></p>
+          <div *ngIf="error" text-center margin-top>
+          <ion-label align-items-center color="danger">{{'messages.email_password_error' | translate}}</ion-label>
+          </div>
+    <ion-row>
+      <ion-col>
+        <button ion-button class="login-button" [disabled]="!loginForm.valid" type="submit" [@fadeIn]="'in'">{{'pages.login.login' | translate}}
+        </button>
+      </ion-col>
+    </ion-row>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <!-- Other links -->
+    <div text-center margin-top>
+    <span ion-text class="tappable" tappable (click)="register()">{{'pages.login.new_here' | translate}}? <strong>{{'pages.login.register' | translate}}</strong></span>
+    </div>
+  </div>
+</ion-content>

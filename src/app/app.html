@@ -1,0 +1,8 @@
+<ion-menu type="overlay" [content]="content" id="menu-left">
+  <page-menu></page-menu>
+</ion-menu>
+<ion-menu [content]="content" side="right" id="menu-right">
+  <page-settings></page-settings>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

@@ -1,0 +1,41 @@
+  <ion-toolbar class="user-profile">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <div class="user-avatar">
+            <img style="border-radius: 100%" src="../assets/img/marty-avatar.png">
+          </div>
+        </ion-col>
+        <ion-col padding-top col-8>
+          <h2 ion-text class="no-margin bold text-white">
+            User 1
+          </h2>
+          <span ion-text color="light"></span>
+        </ion-col>
+      </ion-row>
+      <ion-row no-padding class="other-data">
+        <ion-col no-padding class="column">
+          <button ion-button icon-left small full color="dark" menuClose>
+            <ion-icon name="contact"></ion-icon>
+            Edit Profile
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+<ion-content>
+  <ion-list class="user-list">
+    <button ion-item menuClose class="text-1x" (click)="openPage('SearchPage')">
+      <ion-icon style="color: black" item-left name="map"></ion-icon>
+      <span style="color: black">Map</span>
+    </button>
+    <button ion-item menuClose class="text-1x" (click)="openPage('TabsPage')">
+      <ion-icon style="color: black" item-left name="menu"></ion-icon>
+      <span style="color: black">My parkings</span>
+    </button>
+    <button ion-item menuClose class="text-1x" (click)="logout()">
+      <ion-icon style="color: black" item-left name="log-out"></ion-icon>
+      <span style="color: black">Logout</span>
+    </button>
+  </ion-list>
+</ion-content>

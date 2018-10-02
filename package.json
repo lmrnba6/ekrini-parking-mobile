@@ -1,0 +1,111 @@
+{
+  "name": "ekrini-parking-mobile",
+  "version": "0.0.1",
+  "author": "Ionic Framework",
+  "homepage": "http://ionicframework.com/",
+  "private": true,
+  "scripts": {
+    "start": "ionic-app-scripts serve",
+    "clean": "ionic-app-scripts clean",
+    "build": "ionic-app-scripts build",
+    "lint": "ionic-app-scripts lint",
+    "run:android": "ionic cordova run android"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.11",
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/http": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/app-version": "^4.12.0",
+    "@ionic-native/battery-status": "^4.12.0",
+    "@ionic-native/camera": "4.3.3",
+    "@ionic-native/core": "^4.12.0",
+    "@ionic-native/device": "^4.12.0",
+    "@ionic-native/diagnostic": "^4.12.0",
+    "@ionic-native/geolocation": "^4.12.0",
+    "@ionic-native/google-maps": "^4.12.0",
+    "@ionic-native/is-debug": "^4.12.0",
+    "@ionic-native/keyboard": "^4.15.0",
+    "@ionic-native/network": "^4.12.0",
+    "@ionic-native/sim": "^4.12.0",
+    "@ionic-native/splash-screen": "~4.11.0",
+    "@ionic-native/status-bar": "~4.11.0",
+    "@ionic/pro": "2.0.3",
+    "@ionic/storage": "2.1.3",
+    "@ngx-translate/core": "^8.0.0",
+    "@ngx-translate/http-loader": "^3.0.1",
+    "@types/cordova": "0.0.34",
+    "@types/google-maps": "^3.2.0",
+    "angularfire2": "^5.0.2",
+    "cordova-android": "7.1.1",
+    "cordova-plugin-app-version": "^0.1.9",
+    "cordova-plugin-battery-status": "^2.0.2",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-googlemaps": "^2.4.1",
+    "cordova-plugin-ionic-keyboard": "^2.1.2",
+    "cordova-plugin-ionic-webview": "^2.1.0",
+    "cordova-plugin-is-debug": "^1.0.0",
+    "cordova-plugin-mapbox": "^1.2.3",
+    "cordova-plugin-network-information": "^2.0.1",
+    "cordova-plugin-sim": "^1.3.3",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova.plugins.diagnostic": "^4.0.8",
+    "fingerprintjs2": "^1.8.1",
+    "firebase": "^5.5.1",
+    "ionic-angular": "3.9.2",
+    "ionicons": "3.0.0",
+    "json2typescript": "^1.0.6",
+    "jwt-decode": "^2.2.0",
+    "libphonenumber-js": "^1.4.2",
+    "moment": "^2.22.2",
+    "rxjs": "5.5.11",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "3.2.0",
+    "@types/googlemaps": "^3.30.13",
+    "tslint-ionic-rules": "0.0.17",
+    "typescript": "~2.4.2"
+  },
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-app-version": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-is-debug": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-sim": {},
+      "cordova.plugins.diagnostic": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyBLrBTjNQL7gfilRN-M_zbCujg83ZPTzfo",
+        "API_KEY_FOR_IOS": "AIzaSyBw9TDCm89wXAvtubAu-r8nGy6pwyHL7rc",
+        "PLAY_SERVICES_VERSION": "15.0.1",
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-mapbox": {
+        "ACCESS_TOKEN": "pk.eyJ1IjoibG1ybmJhIiwiYSI6ImNqbGI2b3AxMjE3djgzeG42OTIweDc1ZnUifQ.UWpndmW311Bki532bT-Fpw"
+      },
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
+      },
+      "cordova-plugin-statusbar": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

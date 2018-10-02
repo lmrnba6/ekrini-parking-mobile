@@ -1,0 +1,61 @@
+
+  <ion-navbar class="no-border">
+    <ion-title>
+      <ion-icon name="cog" class="text-dark"></ion-icon>
+      <span class="text-dark">Settings</span>
+    </ion-title>
+  </ion-navbar>
+
+
+
+<ion-content >
+  <!-- User settings-->
+  <ion-item-group>
+    <ion-item-divider color="dark" class="bold">User Settings</ion-item-divider>
+    <ion-item>
+      <ion-label>Language</ion-label>
+      <ion-select style="color: black" [(ngModel)]="language" (ngModelChange)="onLanguageChange($event)" cancelText="{{'buttons.cancel' | translate}}" okText="{{'buttons.ok' | translate}}">
+        <ion-option value="en" selected="{{lang === 'en'}}">{{'languages.english' | translate}}</ion-option>
+        <ion-option value="fr" selected="{{lang === 'fr'}}">{{'languages.french' | translate}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Currency</ion-label>
+      <ion-select style="color: black" [(ngModel)]="currency" cancelText="{{'buttons.cancel' | translate}}" okText="{{'buttons.ok' | translate}}">
+        <ion-option value="CAD" selected="true">Canadian Dollar (CAD$)</ion-option>
+        <ion-option value="USD">U.S Dollar (US$)</ion-option>
+        <ion-option value="EUR">Euro (€)</ion-option>
+        <ion-option value="GBP">Pound (£)</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Units</ion-label>
+      <ion-select style="color: black" [(ngModel)]="munits" cancelText="{{'buttons.cancel' | translate}}" okText="{{'buttons.ok' | translate}}">
+        <ion-option value="M" selected="true">Miles (ft²)</ion-option>
+        <ion-option value="K">Kilometers (m²)</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-item-group>
+  <!-- App settings-->
+  <ion-item-group>
+    <ion-item-divider color="dark" class="bold">App Settings</ion-item-divider>
+    <ion-item>
+      <ion-label style="color: black">Notifications?</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <span style="color: black">Clear Private Data</span>
+    </ion-item>
+    <ion-item>
+      <ion-label style="color: black">Push Notifications?</ion-label>
+      <ion-toggle checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <span style="color: black">Privacy Policy</span>
+    </ion-item>
+  </ion-item-group>
+
+  <!--sign out button-->
+  <button ion-button menuClose="right" color="dark" full tappable (click)="logout()">{{'pages.login.logout' | translate}}</button>
+
+</ion-content>

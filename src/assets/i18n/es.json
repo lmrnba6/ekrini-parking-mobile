@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "login": {
+      "username": "Nom d'utilisateur",
+      "email": "Courriel",
+      "forgot_password": "Mot de passe oublié",
+      "new_here": "Nouveau ici",
+      "register": "Inscrire",
+      "login": "Entrer",
+      "name": "Nom",
+      "password": "Mot de passe",
+      "have_account": "J'ai un compte",
+      "forgot_password_text": "Entrer votre courriel pour envoyer un lien du nouveau mot de passe",
+      "email_sent_success": "Courriel envoyé"
+    }
+  },
+  "languages": {
+    "title": "Langues",
+    "french": "Français",
+    "english": "Anglais",
+  },
+  "buttons": {
+    "cancel": "Annuler",
+    "send": "Envoyer",
+    "ok": "Ok"
+  }
+}

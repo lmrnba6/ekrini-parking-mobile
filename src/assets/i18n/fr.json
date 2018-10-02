@@ -1,0 +1,48 @@
+{
+  "pages": {
+    "login": {
+      "username": "Nom d'utilisateur",
+      "email": "Courriel",
+      "forgot_password": "Mot de passe oublié",
+      "new_here": "Nouveau ici",
+      "register": "Inscrire",
+      "login": "Entrer",
+      "logout": "Se Déconnecter",
+      "name": "Nom",
+      "password": "Mot de passe",
+      "have_account": "J'ai un compte",
+      "forgot_password_text": "Entrer votre courriel pour envoyer un lien du nouveau mot de passe",
+      "email_sent_success": "Courriel envoyé"
+    },
+    "item": {
+      "address": "Adresse",
+      "city": "Ville",
+      "province": "Province",
+      "zip": "Code postal",
+      "number":"Numéro parking #",
+      "size": "Dimensions",
+      "price": "Prix",
+      "comment": "Commentaire",
+      "chooseImage": "Choisir une Image",
+      "startTime": "From",
+      "endTime": "To",
+      "date": "Date",
+      "recurrence": "Recurrence",
+      "none": "On time",
+      "every_day": "Every Day",
+      "every_week":"Every week"
+    }
+  },
+  "languages": {
+    "title": "Langues",
+    "french": "Français",
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "arabic": "Arabe"
+  },
+  "buttons": {
+    "cancel": "Annuler",
+    "send": "Envoyer",
+    "ok": "Ok"
+  }
+}
